@@ -1,2 +1,2 @@
 # SF-landing_page
-верстка Лендинга для SkillFactory
+верстка Лендинга по макету из Figma для <strong>SkillFactory</strong>
