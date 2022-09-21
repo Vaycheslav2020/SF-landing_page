@@ -9,14 +9,401 @@ body {
 
 body {
   margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Yeseva One", cursive;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
+/* ================ */
+
+.title {
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text-yellow {
+  color: #e3b873;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-black {
+  color: #181818;
+}
+
 .container {
-  max-width: 1240px;
+  max-width: 1256px;
+  padding: 0 18px;
   width: 100%;
   margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.button {
+  width: 100%;
+  height: 50px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #e3b873;
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+}
+
+.button:hover {
+  background: transparent;
+}
+
+.circle__button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e3b873;
+  border: 1px solid #e3b873;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 300ms ease;
+}
+
+.circle__button:hover {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+.mobile-slider {
+  width: 100%;
+  position: relative;
+}
+
+.slide-left {
+  left: 14px;
+  padding-right: 8px;
+}
+
+.slide-right {
+  right: 14px;
+  padding-left: 8px;
+}
+
+.mobile-slider figure {
+  margin: 0;
+}
+
+.mobile-slider figure img {
+  width: 100%;
+}
+
+.subtitle__icon {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle__icon::after,
+.subtitle__icon::before {
+  content: "";
+  width: 32px;
+  height: 2px;
+  display: inline-block;
+  background: #e3b873;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+/* form */
+
+.button-submit {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  transition: all 300ms ease;
+}
+
+.label-input {
+  margin-top: 60px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+}
+
+.input::placeholder {
+  color: #ffffff;
+}
+
+.label-checkbox {
+  margin: 28px 0 60px;
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.label-checkbox::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid #e3b873;
+  border-radius: 1px;
+  margin-right: 9px;
+  transition: all 300ms ease;
+}
+
+.checkbox:checked + .label-checkbox::before {
+  content: url("../images/icons/checkbox.svg");
+  background: #e3b873;
+}
+
+.label-checkbox:active::before {
+  transform: scale(0.5);
+}
+
+.checkbox {
+  display: none;
+}
+
+/* ================= */
+
+.header {
+  padding: 24px 0;
+  background: #131313;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+.tel {
+  font-size: 11px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.menu {
+  display: none;
+}
+
+.request__call {
+  display: none;
+}
+
+.description {
+  font-size: 14px;
+  padding: 85px 0 60px;
+  background: url(../images/description-bg-375.jpg) center/cover;
+  position: relative;
+}
+
+.description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.page-title {
+  font-size: 23px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.button__calculate {
+  margin-top: 32px;
+  transition: all 300ms ease;
+}
+
+.button__application {
+  width: 100%;
+  height: 51px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  border: 1px solid #ffffff;
+  margin-top: 26px;
+  transition: all 300ms ease;
+}
+
+.button__application:hover {
+  border: 1px solid #e3b873;
+  background: #e3b873;
+}
+
+.button-application__desctop {
+  display: none;
+}
+
+/* completed projects */
+
+.completed-projects {
+  background: #181818;
+  padding: 36px 0 58px;
+}
+
+.completed-projects__block > p {
+  margin: 22px 12px 62px;
+  text-align: center;
+}
+
+.comleted-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+
+.comleted-info__item {
+  flex: 1 0 50%;
+}
+
+.comleted-info__item:nth-of-type(-n + 2) {
+  margin-bottom: 27px;
+}
+
+.comleted-info__item .name {
+  font-size: 14px;
+  margin-bottom: 11px;
+  text-transform: uppercase;
+}
+
+.completed-projects__slide {
+  display: none;
+}
+
+/* online-control */
+
+.online-control {
+  background: #181818;
+}
+
+.video-wrapper {
+  margin: 40px 0 50px;
+  position: relative;
+}
+
+.video-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 4px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.video-wrapper::after {
+  content: "";
+  width: 55px;
+  height: 2px;
+  display: block;
+  background: #e3b873;
+  border-radius: 30px;
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.video {
+  width: 100%;
+}
+
+.video-play {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 10px;
+}
+
+.online-control {
+  position: relative;
+}
+
+.online-control p {
+  text-align: center;
+}
+
+.online-control::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  background: #ffffff;
 }

@@ -1,33 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
-  <title>Landing Page</title>
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <nav class="menu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
         <a href="#" class="logo">IC "Repair Design Project"</a>
+        <nav class="menu">
+          <a href="#" class="menu__item">HOME</a>
+          <a href="#" class="menu__item">PROJECTS</a>
+          <a href="#" class="menu__item">MEASUREMENT</a>
+          <a href="#" class="menu__item">TEAM</a>
+          <a href="#" class="menu__item">REVIEWS</a>
+          <a href="#" class="menu__item">CONTACTS</a>
+        </nav>
         <a href="tel:+79287683239" class="tel">+7 (928) 768-32-39</a>
-        <button class="request__call">Request a call</button>
-      </nav>
-      <section class="header-content">
-        <h1>Turnkey Repair in the 
-          city of Rostov-on-Don</h1>
-          <p>Get ready-made turnkey repairs on time
-            with work time saving up to 45 days and 20% from
-            cost of materials due to the organization of work</p>
-            <div>
-              <button>CALCULATE THE COST</button>
-              <button>SUBMIT YOUR APPLICATION</button>
-            </div>
+        <button class="button request__call">Request a call</button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="description">
+        <div class="container">
+          <h1 class="page-title">
+            Turnkey Repair in the city of
+            <span class="text-yellow">Rostov-on-Don</span>
+          </h1>
+          <p>
+            Get ready-made turnkey repairs on time with work time saving up to
+            45 days and 20% from cost of materials due to the organization of
+            work
+          </p>
+          <div>
+            <button class="button button__calculate">
+              CALCULATE THE COST
+            </button>
+            <button class="button__application">
+              APPLICATION
+            </button>
+            <button
+              class="button__application button-application__desctop"
+            >
+              SUBMIT YOUR APPLICATION
+            </button>
+          </div>
+        </div>
       </section>
-    </div>
-  </header>
-</body>
+
+      <section class="completed-projects">
+        <div class="container">
+          <section class="completed-projects__block">
+            <h2 class="title text-yellow">
+              Completed <br />
+              projects
+            </h2>
+            <p>
+              Only a small part of the work performed by our company is
+              presented on the site. For 14 years on in the construction market
+              we have made happy more than 1000 families
+            </p>
+            <div class="mobile-slider">
+              <button class="circle__button slide-left">
+                <img src="./images/icons/arrow-left.svg" alt="left slide" />
+              </button>
+              <button class="circle__button slide-right">
+                <img src="./images/icons/arrow-right.svg" alt="right slide" />
+              </button>
+              <figure>
+                <img src="./images/slide-1.jpg" alt="photo design" />
+              </figure>
+            </div>
+            <div class="comleted-info">
+              <div class="comleted-info__item">
+                <h4 class="name text-yellow">City:</h4>
+                <p>
+                  Rostov-on-Don <br />
+                  LCD admiral
+                </p>
+              </div>
+              <div class="comleted-info__item">
+                <h4 class="name text-yellow">apartment area:</h4>
+                <p>81 m2</p>
+              </div>
+              <div class="comleted-info__item">
+                <h4 class="name text-yellow">Repair time:</h4>
+                <p>3.5 months</p>
+              </div>
+              <div class="comleted-info__item">
+                <h4 class="name text-yellow">Repair Cost:</h4>
+                <p>Upon request</p>
+              </div>
+            </div>
+          </section>
+          <section class="completed-projects__slide"></section>
+        </div>
+      </section>
+
+      <section class="online-control">
+        <div class="container">
+          <h2 class="subtitle">online control</h2>
+          <figure class="subtitle__icon">
+            <img src="./images/icons/camera.svg" alt="subtitle icon camera" />
+          </figure>
+          <div class="video-wrapper">
+            <video class="video" src="#" poster="./images/poster.jpg"></video>
+            <button class="circle__button video-play">
+              <img src="./images/icons/play.svg" alt="play video" />
+            </button>
+          </div>
+          <p>
+            At each facility, a camera is installed that broadcasts the progress
+            of work on the clock. At any time, you can go to our website and
+            monitor the progress of work in your apartment. Y ou can watch the
+            live broadcast from one of our facilities! Leave a request below and
+            you will receive a link to the broadcast.
+          </p>
+          <form action="#" class="form online-control__form">
+            <label class="label-input" for="name">
+              Name
+              <input class="input" id="name" type="text" placeholder="What is your name:">
+            </label>
+            <label class="label-input" for="number">
+              Number
+              <input class="input" id="number" type="number" placeholder="Your phone number:">
+            </label>
+            <input class="checkbox" type="checkbox" name="I agree to the processing of personal data" id="processing">
+            <label class="label-checkbox" for="processing">I agree to the processing of personal data</label>
+            <button type="submit" class="button button-submit">SUMBIT</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
