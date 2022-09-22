@@ -43,15 +43,9 @@
             work
           </p>
           <div>
-            <button class="button button__calculate">
-              CALCULATE THE COST
-            </button>
-            <button class="button__application">
-              APPLICATION
-            </button>
-            <button
-              class="button__application button-application__desctop"
-            >
+            <button class="button button__calculate">CALCULATE THE COST</button>
+            <button class="button__application">APPLICATION</button>
+            <button class="button__application button-application__desctop">
               SUBMIT YOUR APPLICATION
             </button>
           </div>
@@ -60,7 +54,7 @@
 
       <section class="completed-projects">
         <div class="container">
-          <section class="completed-projects__block">
+          <section class="completed-projects__section">
             <h2 class="title text-yellow">
               Completed <br />
               projects
@@ -103,13 +97,15 @@
               </div>
             </div>
           </section>
+          <!--  -->
           <section class="completed-projects__slide"></section>
+          <!--  -->
         </div>
       </section>
 
       <section class="online-control">
         <div class="container">
-          <h2 class="subtitle">online control</h2>
+          <h2 class="subtitle text-white">online control</h2>
           <figure class="subtitle__icon">
             <img src="./images/icons/camera.svg" alt="subtitle icon camera" />
           </figure>
@@ -129,16 +125,99 @@
           <form action="#" class="form online-control__form">
             <label class="label-input" for="name">
               Name
-              <input class="input" id="name" type="text" placeholder="What is your name:">
+              <input
+                class="input"
+                id="name"
+                type="text"
+                placeholder="What is your name:"
+              />
             </label>
             <label class="label-input" for="number">
               Number
-              <input class="input" id="number" type="number" placeholder="Your phone number:">
+              <input
+                class="input"
+                id="number"
+                type="number"
+                placeholder="Your phone number:"
+              />
             </label>
-            <input class="checkbox" type="checkbox" name="I agree to the processing of personal data" id="processing">
-            <label class="label-checkbox" for="processing">I agree to the processing of personal data</label>
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="I agree to the processing of personal data"
+              id="processing"
+            />
+            <label class="label-checkbox" for="processing"
+              >I agree to the processing of personal data</label
+            >
             <button type="submit" class="button button-submit">SUMBIT</button>
           </form>
+        </div>
+      </section>
+
+      <section class="types-repair">
+        <div class="container">
+          <h2 class="subtitle text-black">TYPES OF REPAIR</h2>
+          <figure class="subtitle__icon">
+            <img src="./images/icons/hammer.svg" alt="subtitle icon hammer" />
+          </figure>
+          <section class="pricing">
+            <div class="pricing__item">
+              <img
+                class="pricing__photo"
+                src="./images/redecorating.jpg"
+                alt="redecorating photo"
+              />
+              <ul class="pricing__description">
+                <li class="pricing__title">Redecorating</li>
+                <li class="pricing__li">Dismantling of old coatings</li>
+                <li class="pricing__li">Wallpapering</li>
+                <li class="pricing__li">Painting walls and ceilings</li>
+                <li class="pricing__li">Laying flooring</li>
+                <li class="pricing__li">Replacing plumbing</li>
+                <li class="pricing__li">Replacing sockets and switches</li>
+                <li class="pricing__li">Replacing doors</li>
+                <li class="price">from 900 rub / m2</li>
+              </ul>
+            </div>
+            <div class="pricing__item">
+              <img
+                class="pricing__photo"
+                src="./images/overhaul.jpg"
+                alt="overhaul photo"
+              />
+              <ul class="pricing__description">
+                <li class="pricing__title">Overhaul</li>
+
+                <li class="pricing__li">Dismantling of old coatings</li>
+                <li class="pricing__li">Wallpapering</li>
+                <li class="pricing__li">Painting walls and ceilings</li>
+                <li class="pricing__li">Laying flooring</li>
+                <li class="pricing__li">Replacing plumbing</li>
+                <li class="pricing__li">Replacing sockets and switches</li>
+                <li class="pricing__li">Replacing doors</li>
+                <li class="price">from 1800 rub / m2</li>
+              </ul>
+            </div>
+            <div class="pricing__item">
+              <img
+                class="pricing__photo"
+                src="./images/designer.jpg"
+                alt="Designer Repair photo"
+              />
+              <ul class="pricing__description">
+                <li class="pricing__title">Designer Repair</li>
+                <li class="pricing__li">Dismantling of old coatings</li>
+                <li class="pricing__li">Wallpapering</li>
+                <li class="pricing__li">Painting walls and ceilings</li>
+                <li class="pricing__li">Laying flooring</li>
+                <li class="pricing__li">Replacing plumbing</li>
+                <li class="pricing__li">Replacing sockets and switches</li>
+                <li class="pricing__li">Replacing doors</li>
+                <li class="price">from 4000 rub / m2</li>
+              </ul>
+            </div>
+          </section>
         </div>
       </section>
     </main>

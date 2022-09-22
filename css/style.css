@@ -38,6 +38,10 @@ button {
   background: none;
 }
 
+ul, ol {
+  margin: 0;
+}
+
 /* ================ */
 
 .title {
@@ -84,14 +88,13 @@ button {
   font-size: 11px;
   text-align: center;
   color: #ffffff;
-  border: 1px solid #e3b873;
   background: #e3b873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
 }
 
 .button:hover {
-  background: transparent;
+  background: orange;
 }
 
 .circle__button {
@@ -157,6 +160,7 @@ button {
 /* form */
 
 .button-submit {
+  min-width: 200px;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -195,6 +199,7 @@ button {
   display: flex;
   align-items: center;
   cursor: pointer;
+  user-select: none;
 }
 
 .label-checkbox::before {
@@ -317,7 +322,7 @@ button {
   padding: 36px 0 58px;
 }
 
-.completed-projects__block > p {
+.completed-projects__section > p {
   margin: 22px 12px 62px;
   text-align: center;
 }
@@ -406,4 +411,63 @@ button {
   width: 100%;
   height: 25px;
   background: #ffffff;
+}
+
+/* types-repair */
+
+.types-repair {
+  padding-top: 58px;
+}
+
+.pricing {
+  margin-top: 40px;
+}
+
+.pricing__item {
+  position: relative;
+  /* padding-top: 70%; */
+  margin-bottom: 80px;
+}
+
+.pricing__photo {
+  width: 100%;
+  user-select: none;
+  position: absolute;
+  top: 0;
+}
+
+.pricing__description {
+  background: #ffffff;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+  padding: 20px 50px 35px 45px;
+  position: relative;
+  display: inline-block;
+}
+
+.pricing__title {
+  font-family: "Yeseva One";
+  font-size: 15px;
+  color: #363636;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.pricing__li {
+  font-size: 13px;
+  color: #959595;
+}
+
+.price {
+  height: 40px;
+  background: #e3b873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  padding: 0 20px;
+  font-family: "Yeseva One";
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  line-height: 40px;
+  left: 0;
+  bottom: -20px;
 }
