@@ -516,8 +516,8 @@ ol {
 
 .map-wrapper {
   display: flex;
-  justify-content: center;
   flex-direction: column-reverse;
+  text-align: center;
 }
 
 .map-text {
