@@ -26,8 +26,10 @@
           <a href="#" class="menu__item">REVIEWS</a>
           <a href="#" class="menu__item">CONTACTS</a>
         </nav>
-        <a href="tel:+79287683239" class="tel">+7 (928) 768-32-39</a>
-        <button class="button request__call">Request a call</button>
+        <div class="menu-request">
+          <a href="tel:+79287683239" class="tel">+7 (928) 768-32-39</a>
+          <button class="button request__call">Request a call</button>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -46,7 +48,7 @@
             <div class="description__button-wrapper">
               <button class="button">CALCULATE THE COST</button>
               <button class="button__application">APPLICATION</button>
-              <button class="button__application button-application__desctop">
+              <button class="button__application button-application__desktop">
                 SUBMIT YOUR APPLICATION
               </button>
             </div>
@@ -55,7 +57,7 @@
       </section>
 
       <section class="completed-projects">
-        <div class="container">
+        <div class="container completed-container">
           <section class="completed-projects__section">
             <h2 class="title text-yellow">
               Completed <br />
@@ -77,30 +79,52 @@
                 <img src="./images/slide-1.jpg" alt="photo design" />
               </figure>
             </div>
-            <div class="comleted-info">
-              <div class="comleted-info__item">
+            <div class="completed-info">
+              <div class="completed-info__item">
                 <h4 class="name text-yellow">City:</h4>
                 <p>
                   Rostov-on-Don <br />
                   LCD admiral
                 </p>
               </div>
-              <div class="comleted-info__item">
+              <div class="completed-info__item">
                 <h4 class="name text-yellow">apartment area:</h4>
                 <p>81 m2</p>
               </div>
-              <div class="comleted-info__item">
+              <div class="completed-info__item">
                 <h4 class="name text-yellow">Repair time:</h4>
                 <p>3.5 months</p>
               </div>
-              <div class="comleted-info__item">
+              <div class="completed-info__item">
                 <h4 class="name text-yellow">Repair Cost:</h4>
                 <p>Upon request</p>
               </div>
             </div>
+            <div class="completed__control-slide">
+              <button class="completed__control-button __left">
+                <img src="./images/icons/arrow-left-d.svg" alt="arrow left">
+              </button>
+              <div class="completed__control-dots">
+                <div class="dot __active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <button class="completed__control-button __right">
+                <img src="./images/icons/arrow-right-d.svg" alt="arrow right">
+              </button>
+            </div>
           </section>
           <!--  -->
-          <section class="completed-projects__slide"></section>
+          <section class="completed-projects__slides">
+            <div class="completed-projects__tabs">
+              <a href="#" class="tab __active">Rostov-on-Don, Admiral</a>
+              <a href="#" class="tab">Sochi Thieves</a>
+              <a href="#" class="tab">Rostov-on-Don Patriotic</a>
+            </div>
+            <figure class="completed-projects__slide">
+              <img src="./images/slide-2.jpg" alt="slide photo design">
+            </figure>
+          </section>
           <!--  -->
         </div>
       </section>
@@ -153,6 +177,38 @@
               >I agree to the processing of personal data</label
             >
             <button type="submit" class="button button-submit">SUBMIT</button>
+          </form>
+          <form action="#" class="form online-control__form_desktop">
+            <div class="online-control__form-wrapper">
+              <label class="label-input" for="name-01">
+                Name
+                <input
+                  class="input"
+                  id="name-01"
+                  type="text"
+                  placeholder="What is your name:"
+                />
+              </label>
+              <label class="label-input" for="number-01">
+                Number
+                <input
+                  class="input"
+                  id="number-01"
+                  type="number"
+                  placeholder="Your phone number:"
+                />
+              </label>
+              <button type="submit" class="button button-submit">SUBMIT</button>
+            </div>
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="I agree to the processing of personal data"
+              id="processing-01"
+            />
+            <label class="label-checkbox" for="processing-01"
+              >I agree to the processing of personal data</label
+            >
           </form>
         </div>
       </section>
@@ -241,7 +297,7 @@
             </figure>
           </div>
           <h3 class="min-subtitle">have any questions?</h3>
-          <form action="#" class="form online-control__form">
+          <form action="#" class="form">
             <label class="label-input" for="name-1">
               Name
               <input
