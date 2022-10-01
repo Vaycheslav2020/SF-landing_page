@@ -607,6 +607,11 @@ input[type="number"]::-webkit-inner-spin-button {
   bottom: -20px;
 }
 
+.help-save,
+.leave-request {
+  display: none;
+}
+
 /* We realize your wildest fantasies */
 
 .fantasies {
@@ -854,7 +859,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .online-control::after {
-    height: 780px;
+    height: 670px;
   }
 
   .online-control__form {
@@ -882,7 +887,7 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 0 auto;
   }
 
-  .online-control__form-wrapper .input{
+  .online-control__form-wrapper .input {
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
     color: #363636;
   }
@@ -901,5 +906,119 @@ input[type="number"]::-webkit-inner-spin-button {
     color: #181818;
     margin-top: 39px;
     justify-content: center;
+  }
+
+  .leave-request {
+    padding-top: 170px;
+    background: url(../images/leave-bg.png) left bottom no-repeat;
+  }
+
+  .leave-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .leave__numbered-ol {
+    list-style: none;
+    padding-left: 170px;
+    padding-bottom: 50px;
+  }
+
+  .leave__numbered-ol .item {
+    width: 378px;
+    font-size: 14px;
+    color: #363636;
+    margin-bottom: 102px;
+    white-space: inherit;
+    padding-left: 63px;
+    position: relative;
+  }
+
+  .leave__numbered-ol .item:last-child {
+    margin-bottom: 0;
+  }
+
+  .leave__numbered-ol .item span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Yeseva One";
+    font-size: 18px;
+    color: #ffffff;
+    background: #e3b873;
+    border: 8px solid #ffffff;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 30px;
+  }
+
+  .leave__form {
+    width: 506px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 49px;
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  .leave__form p {
+    text-align: center;
+    margin-bottom: 39px;
+  }
+
+  .leave__form .label-input {
+    margin: 0 0 48px 0;
+  }
+
+  .leave__form .label-input.__margin {
+    margin: 0;
+  }
+
+  .leave__form .label-checkbox {
+    margin: 16px 0 39px 0;
+  }
+
+  .leave__form .button-submit {
+    width: 213px;
+    flex-basis: auto;
+    align-self: flex-end;
+  }
+
+  .help-save {
+    padding: 40px 0 242px;
+  }
+
+  .help-save__container {
+    display: flex;
+    justify-content: end;
+  }
+
+  .help-save__block {
+    display: flex;
+    align-items: center;
+    color: #e3b873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+  }
+
+  .help-save__block figure {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e3b873;
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+    border-radius: 50%;
+    margin-right: 25px;
+  }
+
+  .fantasies-form {
+    display: none;
   }
 }
