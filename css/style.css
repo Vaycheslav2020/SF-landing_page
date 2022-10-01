@@ -608,7 +608,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .help-save,
-.leave-request {
+.leave-request,
+.gallery {
   display: none;
 }
 
@@ -909,6 +910,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .leave-request {
+    display: block;
     padding-top: 170px;
     background: url(../images/leave-bg.png) left bottom no-repeat;
   }
@@ -991,6 +993,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .help-save {
+    display: block;
     padding: 40px 0 242px;
   }
 
@@ -1018,7 +1021,92 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-right: 25px;
   }
 
-  .fantasies-form {
+  .fantasies {
     display: none;
+  }
+
+  .gallery {
+    display: block;
+    position: relative;
+    background: url(../images/realize.jpg) left bottom no-repeat;
+  }
+
+  .gallery::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      109.8deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
+  }
+
+  .gallery-container {
+    display: flex;
+  }
+
+  .gallery-links {
+    width: 100%;
+    padding-top: 138px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery-links .title {
+    margin-bottom: 47px;
+  }
+
+  .gallery-link {
+    width: fit-content;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #ffffff;
+    transition: all 300ms ease;
+  }
+
+  .gallery-link.__active {
+    color: #e3b873;
+    position: relative;
+  }
+
+  .gallery-link.__active::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    background: #e3b873;
+  }
+
+  .gallery-link:hover {
+    color: #e3b873;
+  }
+
+  .gallery-images {
+    width: 748px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .gallery-image:first-child {
+    margin-bottom: 25px;
+  }
+
+  .gallery-images__item-1 {
+    margin: -40px 0;
+  }
+
+  .gallery-images__item-2 {
+    margin-top: -100px;
+  }
+
+  .our-clients {
+    display: block;
+    padding: 110px 0 160px;
   }
 }
