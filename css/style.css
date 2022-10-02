@@ -610,7 +610,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .help-save,
 .leave-request,
 .gallery,
-.our-clients {
+.our-clients,
+.have-questions {
   display: none;
 }
 
@@ -755,7 +756,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .video-wrapper {
-    width: 817px;
+    max-width: 817px;
     margin: 30px auto 100px;
   }
 
@@ -1108,7 +1109,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .our-clients {
     display: block;
-    padding: 110px 0 160px;
+    padding: 110px 0 0;
   }
 
   .our-clients__text {
@@ -1190,5 +1191,97 @@ input[type="number"]::-webkit-inner-spin-button {
     font-family: "Yeseva One";
     font-size: 17px;
     text-transform: uppercase;
+  }
+
+  .have-questions {
+    display: block;
+    background: url(../images/have-questions-bg-left.png) left bottom no-repeat,
+      url(../images/have-questions-bg-right.png) right bottom no-repeat;
+  }
+  .have-questions__form {
+    width: 925px;
+    background: #181818;
+    padding: 34px 181px;
+    margin: 0 auto;
+    transform: translateY(50%);
+  }
+
+  .have-questions__form .label-input {
+    width: 100%;
+    margin-top: 48px;
+  }
+
+  .have-questions__form .label-checkbox {
+    width: 100%;
+    justify-content: center;
+    margin: 46px 0 50px;
+  }
+
+  .have-questions__form .button-submit {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .have-questions__form_block {
+    display: flex;
+    align-items: center;
+  }
+
+  .have-questions__form_block .label-input {
+    margin-right: 58px;
+  }
+
+  .have-questions__form_block .label-input:last-child {
+    margin-right: 0;
+  }
+
+  .map {
+    background: url(../images/map-bg.png) left top no-repeat;
+    background-size: cover;
+    padding: 275px 0 65px;
+    position: relative;
+  }
+
+  .map::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(24, 24, 24, 0.9) 3.47%,
+      rgba(24, 24, 24, 0.72) 100%
+    );
+  }
+
+  .map-text {
+    width: 590px;
+    margin: 0 auto 43px;
+    font-size: 20px;
+  }
+
+  .map-wrapper {
+    flex-direction: column;
+  }
+
+  .footer {
+    display: block;
+    padding: 48px 0;
+    background: #131313;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .description {
+    background: url(../images/description-bg-2500.jpg) center/cover;
   }
 }

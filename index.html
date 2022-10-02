@@ -19,12 +19,12 @@
       <div class="container header-container">
         <a href="#" class="logo">IC "Repair Design Project"</a>
         <nav class="menu">
-          <a href="#" class="menu__item">HOME</a>
-          <a href="#" class="menu__item">PROJECTS</a>
-          <a href="#" class="menu__item">MEASUREMENT</a>
-          <a href="#" class="menu__item">TEAM</a>
-          <a href="#" class="menu__item">REVIEWS</a>
-          <a href="#" class="menu__item">CONTACTS</a>
+          <a href="#home" class="menu__item">HOME</a>
+          <a href="#projects" class="menu__item">PROJECTS</a>
+          <a href="#measurement" class="menu__item">MEASUREMENT</a>
+          <a href="#team" class="menu__item">TEAM</a>
+          <a href="#reviews" class="menu__item">REVIEWS</a>
+          <a href="#contacts" class="menu__item">CONTACTS</a>
         </nav>
         <div class="menu-request">
           <a href="tel:+79287683239" class="tel">+7 (928) 768-32-39</a>
@@ -33,7 +33,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="description">
+      <section id="home" class="description">
         <div class="container">
           <div class="description-container">
             <h1 class="page-title">
@@ -57,7 +57,7 @@
         </div>
       </section>
 
-      <section class="completed-projects">
+      <section id="projects" class="completed-projects">
         <div class="container completed-container">
           <section class="completed-projects__section">
             <h2 class="title text-yellow">
@@ -130,7 +130,7 @@
         </div>
       </section>
 
-      <section class="online-control">
+      <section id="measurement" class="online-control">
         <div class="container">
           <h2 class="subtitle text-white">online control</h2>
           <figure class="subtitle__icon">
@@ -214,7 +214,7 @@
         </div>
       </section>
 
-      <section class="types-repair">
+      <section id="team" class="types-repair">
         <div class="container">
           <h2 class="subtitle text-black">TYPES OF REPAIR</h2>
           <figure class="subtitle__icon">
@@ -408,7 +408,7 @@
         </div>
       </section>
 
-      <section class="our-clients">
+      <section id="reviews" class="our-clients">
         <div class="container">
           <h2 class="subtitle text-black">our clients</h2>
           <figure class="subtitle__icon">
@@ -417,7 +417,9 @@
               alt="subtitle icon handshake"
             />
           </figure>
-          <p class="our-clients__text">80% of our customers recommend us to their friends and family.</p>
+          <p class="our-clients__text">
+            80% of our customers recommend us to their friends and family.
+          </p>
 
           <div class="reviews-wrapper">
             <div class="card">
@@ -443,11 +445,19 @@
               </p>
               <div class="card-parameters">
                 <div class="card-parameters__block __square">
-                  <img src="./images/icons/square.svg" alt="square icon" class="card-parameters__icon">
+                  <img
+                    src="./images/icons/square.svg"
+                    alt="square icon"
+                    class="card-parameters__icon"
+                  />
                   <span>40 m2</span>
                 </div>
                 <div class="card-parameters__block">
-                  <img src="./images/icons/notes.svg" alt="notes icon" class="card-parameters__icon">
+                  <img
+                    src="./images/icons/notes.svg"
+                    alt="notes icon"
+                    class="card-parameters__icon"
+                  />
                   <span>48 DAYS</span>
                 </div>
               </div>
@@ -460,7 +470,8 @@
                   class="card__client-photo"
                 />
                 <h4 class="card__name">
-                  Afanasyev Sergey <br> Alexandrovich
+                  Afanasyev Sergey <br />
+                  Alexandrovich
                 </h4>
               </div>
               <p class="card-description">
@@ -474,11 +485,19 @@
               </p>
               <div class="card-parameters">
                 <div class="card-parameters__block __square">
-                  <img src="./images/icons/square.svg" alt="square icon" class="card-parameters__icon">
+                  <img
+                    src="./images/icons/square.svg"
+                    alt="square icon"
+                    class="card-parameters__icon"
+                  />
                   <span>90 м2</span>
                 </div>
                 <div class="card-parameters__block">
-                  <img src="./images/icons/notes.svg" alt="notes icon" class="card-parameters__icon">
+                  <img
+                    src="./images/icons/notes.svg"
+                    alt="notes icon"
+                    class="card-parameters__icon"
+                  />
                   <span>128 DAYS</span>
                 </div>
               </div>
@@ -491,7 +510,8 @@
                   class="card__client-photo"
                 />
                 <h4 class="card__name">
-                  Kiriev Egor <br> Leonidovich
+                  Kiriev Egor <br />
+                  Leonidovich
                 </h4>
               </div>
               <p class="card-description">
@@ -505,16 +525,71 @@
               </p>
               <div class="card-parameters">
                 <div class="card-parameters__block __square">
-                  <img src="./images/icons/square.svg" alt="square icon" class="card-parameters__icon">
+                  <img
+                    src="./images/icons/square.svg"
+                    alt="square icon"
+                    class="card-parameters__icon"
+                  />
                   <span>56 м2</span>
                 </div>
                 <div class="card-parameters__block">
-                  <img src="./images/icons/notes.svg" alt="notes icon" class="card-parameters__icon">
+                  <img
+                    src="./images/icons/notes.svg"
+                    alt="notes icon"
+                    class="card-parameters__icon"
+                  />
                   <span>86 DAYS</span>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="have-questions">
+        <div class="container have-questions__container">
+          <form action="#" class="form have-questions__form">
+            <h2 class="subtitle text-white">have any questions?</h2>
+            <div class="have-questions__form_block">
+              <label class="label-input" for="name-31">
+                Name
+                <input
+                  class="input"
+                  id="name-31"
+                  type="text"
+                  placeholder="What is your name:"
+                />
+              </label>
+              <label class="label-input" for="number-31">
+                Number
+                <input
+                  class="input"
+                  id="number-31"
+                  type="number"
+                  placeholder="Your phone number:"
+                />
+              </label>
+            </div>
+            <label class="label-input __margin" for="question-31">
+              Question
+              <input
+                class="input"
+                id="question-31"
+                type="text"
+                placeholder="I want to know:"
+              />
+            </label>
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="I agree to the processing of personal data"
+              id="processing-31"
+            />
+            <label class="label-checkbox" for="processing-31"
+              >I agree to the processing of personal data</label
+            >
+            <button type="submit" class="button button-submit">SUBMIT</button>
+          </form>
         </div>
       </section>
 
@@ -578,7 +653,7 @@
         </div>
       </section>
 
-      <section class="map">
+      <section id="contacts" class="map">
         <div class="container">
           <div class="map-wrapper">
             <div class="map-text">
@@ -613,15 +688,17 @@
         <div class="container footer-container">
           <a href="#" class="logo">IC "Repair Design Project"</a>
           <nav class="menu">
-            <a href="#" class="menu__item">HOME</a>
-            <a href="#" class="menu__item">PROJECTS</a>
-            <a href="#" class="menu__item">MEASUREMENT</a>
-            <a href="#" class="menu__item">TEAM</a>
-            <a href="#" class="menu__item">REVIEWS</a>
-            <a href="#" class="menu__item">CONTACTS</a>
+            <a href="#home" class="menu__item">HOME</a>
+            <a href="#projects" class="menu__item">PROJECTS</a>
+            <a href="#measurement" class="menu__item">MEASUREMENT</a>
+            <a href="#team" class="menu__item">TEAM</a>
+            <a href="#reviews" class="menu__item">REVIEWS</a>
+            <a href="#contacts" class="menu__item">CONTACTS</a>
           </nav>
-          <a href="tel:+79287683239" class="tel">+7 (928) 768-32-39</a>
-          <button class="button request__call">Request a call</button>
+          <div class="menu-request">
+            <a href="tel:+79287683239" class="tel">+7 (928) 768-32-39</a>
+            <button class="button request__call">Request a call</button>
+          </div>
         </div>
       </footer>
     </main>
