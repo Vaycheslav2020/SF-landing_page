@@ -611,7 +611,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .leave-request,
 .gallery,
 .our-clients,
-.have-questions {
+.have-questions,
+.completed-projects__slides {
   display: none;
 }
 
@@ -821,6 +822,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .mobile-slider {
     display: none;
+  }
+
+  .completed-projects__slides {
+    display: block;
   }
 
   .completed-projects__section {
