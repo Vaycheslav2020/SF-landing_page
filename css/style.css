@@ -55,7 +55,7 @@ input {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -135,11 +135,32 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 50%;
   transform: translateY(-50%);
   transition: all 300ms ease;
+  z-index: 10;
 }
 
 .circle__button:hover {
   background: transparent;
   border: 1px solid #fff;
+}
+
+/* ========= */
+.slide {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all 300ms ease-out;
+}
+
+.slide.__active {
+  transform: scale(1);
+  position: static;
+  visibility: visible;
 }
 
 .mobile-slider {
@@ -461,12 +482,12 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-right: 0;
 }
 
-.completed-projects__tabs .tab.__active {
+.completed-projects__tabs .tab.active {
   color: #e3b873;
   position: relative;
 }
 
-.completed-projects__tabs .tab.__active::after {
+.completed-projects__tabs .tab.active::after {
   content: "";
   position: absolute;
   bottom: -6px;
@@ -826,6 +847,11 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .completed-projects__slides {
     display: block;
+    position: relative;
+  }
+
+  .completed-projects__slide img {
+    width: 100%;
   }
 
   .completed-projects__section {
